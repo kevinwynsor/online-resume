@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'antd'
-import Languages from './Languages'
-import Frameworks from './Frameworks'
-import Technologies from './Technologies'
+import Languages from './Techstack/Languages'
+import Frameworks from './Techstack/Frameworks'
+import Technologies from './Techstack/Technologies'
 
 function TechStack() {
   return (
