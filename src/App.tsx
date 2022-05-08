@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Name from './components/Name';
+import styled from 'styled-components'
+import TechStack from './components/TechStack';
+import Background from './components/Background';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Body className="App">
+      <Name/>
+      <TechStack/>
+      <Background/>
+    </Body>
   );
 }
+
+const Body = styled.div`
+  margin: 55px 200px;
+`;
+
 
 export default App;
